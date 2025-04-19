@@ -15,6 +15,7 @@
 // };
 
 // export default App;
+
 ////////////////////////////////////// Exercise 2 //////////////////////////
 // const App = () => {
 //   const [fname, setFName] = useState("");
@@ -108,6 +109,7 @@
 // };
 
 // export default App;
+
 ////////////////////////////// Exercise 3 ////////////
 // import React from "react";
 // import Profile from "./Exercise3/Profile";
@@ -118,13 +120,87 @@
 
 // export default App;
 
+//////////////////////////// REVISION //////////////////////
+
+// import React, { useState } from "react";
+
+// const App = () => {
+//   const [count, setCount] = useState(0);
+
+//   const handleCountPlus = () => (count < 10 ? setCount(count + 1) : null);
+//   const handleCountMinus = () => (count > 1 ? setCount(count - 1) : null);
+//   return (
+//     <div>
+//       <button onClick={handleCountPlus}>+</button>
+//       <h1>{count}</h1>
+//       <button onClick={handleCountMinus}>-</button>
+//     </div>
+//   );
+// };
+
+// export default App;
+
+// import React, { useState } from "react";
+
+// const App = () => {
+//   const [inputText, setInputtext] = useState("Type Here..");
+
+//   function handleInputText(e) {
+//     setInputtext(e.target.value);
+//   }
+//   return (
+//     <div>
+//       <input type="text" onInput={handleInputText} />
+//       <h1>{inputText}</h1>
+//     </div>
+//   );
+// };
+
+// export default App;
+
+// import React, { useState } from "react";
+
+// const App = () => {
+//   const [firstName, setFirstName] = useState("");
+//   const [lastName, setLastName] = useState("");
+//   const [email, setEmail] = useState("");
+//   const [submit, setSubmit] = useState("");
+
+//   function handleFirstName(e) {
+//     setFirstName(e.target.value);
+//   }
+//   function handleLastName(e) {
+//     setLastName(e.target.value);
+//   }
+//   function handleEmail(e) {
+//     setEmail(e.target.value);
+//   }
+//   function handleClick(e) {
+//     e.preventDefault();
+//     setSubmit(`${firstName} ${lastName}${email}`);
+//   }
+//   return (
+//     <div onSubmit={handleClick}>
+//       <form>
+//         <input type="text" value={firstName} onInput={handleFirstName} />
+//         <input type="text" value={lastName} onInput={handleLastName} />
+//         <input type="text" value={email} onInput={handleEmail} />
+//         <button type="submit">Submit</button>
+//       </form>
+//       <h1> {submit}</h1>
+//     </div>
+//   );
+// };
+
+// export default App;
+
 import React from "react";
-import Counter from "./Counter";
+import Profile from "./Exercise3/Profile";
 
 const App = () => {
   return (
     <div>
-      <Counter />
+      <Profile />
     </div>
   );
 };

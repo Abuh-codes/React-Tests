@@ -16,3 +16,14 @@
 // };
 
 // export default Button;
+import React from "react";
+
+const Button = ({ onToggle }) => {
+  return (
+    <div>
+      <button onClick={onToggle}>Toggle Login</button>
+    </div>
+  );
+};
+
+export default Button;
