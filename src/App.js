@@ -1,12 +1,10 @@
 import React from "react";
-import Exercise2a from "./useEffects/exercise2/Exercise2a";
-import Exercise2b from "./useEffects/exercise2/Exercise2b";
+import Exercise1 from "./Data-Fetching/Exercise1";
 
 const App = () => {
   return (
     <div>
-      <Exercise2a />
-      <Exercise2b />
+      <Exercise1 />
     </div>
   );
 };
